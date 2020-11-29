@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "target": "es6",
+    "baseUrl": ".",
+    "allowJs": false,
+    "checkJs": false,
+    "jsx": "react",
+    "declaration": false,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noUnusedLocals": true,
+    "noImplicitThis": true,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "lib": ["dom", "es2015", "es2016", "es2017"],
+    "paths": {
+      "@/*": ["./*"],
+      "dnd-core/*": ["../node_modules/dnd-core/lib/cjs/*"],
+      "engine/*": ["./packages/mis2-core/*"],
+      "components/*": ["./packages/mis2-components/*"],
+    }
+  },
+  "exclude": [
+    "es",
+    "lib",
+    "build",
+    "packages",
+    "node_modules",
+  ]
+}
