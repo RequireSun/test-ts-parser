@@ -1,3 +1,5 @@
+// TODO
+// @ts-ignore
 import TS from 'typescript';
 
 export default function (program: TS.Program): TS.TransformerFactory<TS.SourceFile> {

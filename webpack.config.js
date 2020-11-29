@@ -1,10 +1,13 @@
+const path = require('path');
 const InterfaceTransformer = require('./scripts/transformer').default;
 
 module.exports = {
     entry: './src/index.tsx',
     output: {
-        path: './dist'
+        path: path.resolve(__dirname, './dist'),
     },
+    mode: 'development',
+    devtool: 'inline-source-map',
     module: {
         rules: [
             {
@@ -17,7 +20,7 @@ module.exports = {
                         ],
                     }),
                 },
-            }
+            },
         ],
     },
 };
