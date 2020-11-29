@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc ./scripts/transformer.ts && webpack"
+    "build:example": "webpack",
+    "build:script": "tsc ./scripts/transformer.ts",
+    "build": "npm run build:script && npm run build:example"
   },
   "author": "",
   "license": "ISC",
