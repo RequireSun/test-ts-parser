@@ -11,6 +11,16 @@ export interface Props {
     onChange: (val: string | number) => void;
 }
 
+export interface PropsString extends Props {
+    type: 'string';
+    value: string;
+}
+
+export interface PropsNumber extends Props {
+    type: 'number';
+    value: number;
+}
+
 export default class MyInput extends React.Component<Props> {
     static defaultProps = {
         type: 'string',
