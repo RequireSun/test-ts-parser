@@ -5,14 +5,17 @@
   "main": "index.js",
   "scripts": {
     "build:example": "webpack",
-    "build:script": "tsc ./scripts/transformer.ts",
+    "build:script": "tsc --esModuleInterop ./scripts/transformer.ts",
     "build": "npm run build:script && npm run build:example"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/lodash": "^4.14.165",
     "@types/react": "^17.0.0",
+    "lodash": "^4.17.20",
     "react": "^17.0.1",
+    "react-docgen": "^5.3.1",
     "ts-loader": "^8.0.11",
     "typescript": "^4.1.2",
     "webpack": "^5.9.0",
