@@ -6,7 +6,10 @@
   "scripts": {
     "build:example": "webpack",
     "build:script": "tsc --esModuleInterop ./scripts/transformer.ts",
-    "build": "npm run build:script && npm run build:example"
+    "build:docgen": "tsc --esModuleInterop ./scripts/docgen.ts",
+    "build:docgen-2": "tsc -p ./scripts/tsconfig.json",
+    "build": "npm run build:script && npm run build:example",
+    "docgen": "npm run build:docgen && node ./scripts/docgen.js"
   },
   "author": "",
   "license": "ISC",

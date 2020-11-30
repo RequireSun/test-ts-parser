@@ -3,3 +3,5 @@ node_modules
 dist
 output
 scripts/transformer.js
+scripts/docgen.js
+scripts/out

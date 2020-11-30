@@ -1,6 +1,9 @@
 import React from 'react';
 
 export interface Props {
+    /**
+     * test
+     */
     label?: string;
     type?: 'string' | 'number';
     value: string | number;

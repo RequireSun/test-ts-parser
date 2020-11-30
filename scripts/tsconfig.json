@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "./out",
+    "target": "es6",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "allowJs": false,
+    "checkJs": false,
+    "jsx": "react",
+    "declaration": false,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noUnusedLocals": true,
+    "noImplicitThis": true,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "lib": ["dom", "es2015", "es2016", "es2017"],
+    "paths": {
+      "@/*": ["./*"]
+    },
+  },
+  "exclude": [
+    "es",
+    "lib",
+    "build",
+    "packages",
+    "node_modules",
+  ]
+}
